@@ -55,6 +55,7 @@ textarea {
 
 #input > span, #output > span {
     font:bold 16pt Garamond;
+    margin-left:1em;
 }
 
 #arrow {
