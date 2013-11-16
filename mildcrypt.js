@@ -19,15 +19,12 @@ function encode(text, key) {
 function obfuscator() {
 
     var one = '+!+![]';
-    var dictionary = {};
-    var digits = [1, 2, 3, 4, 5, 6, 7, 8, 9];
+    var dictionary = [];
 
-    for(var i in digits)
-        dictionary[digits[i]] = Array(digits[i]+1).join(one);
+    for(var i = 0; i < 9; i++)
+        dictionary.push(Array(i+2).join(one));
 
-    dictionary[0] = '+[]';
-
-    return dictionary;
+    return ['+[]'].concat(dictionary);
 }
 
 // number obfuscator
@@ -55,19 +52,22 @@ function fubar_array(array) {
         array[i] = fubar(array[i]);
 }
 
-
-
 // create a JavaScirpt MildCrypt
-function JavaScript(text) {
+function JavaScript(text, obscene) {
 
     var key_length  = 16;
     var key         = random_key(key_length);
     var cipher      = encode(text, key);
     var JS          = '';
 
-    // obfuscate the cipher and the key
-    fubar_array(cipher);
-    fubar_array(key);
+    // obscene obfuscation flag
+    obscene = typeof obscene !== 'undefined' || obscene != null ? true : false;
+
+    // obfuscate the cipher and the key, if necessary
+    if(obscene) {
+        fubar_array(cipher);
+        fubar_array(key);
+    }
 
     // construct the self-decrypting pseudo string of text
     JS  = 'var _=""; var __=['
@@ -75,10 +75,10 @@ function JavaScript(text) {
         + '];for(var $ in __)_+=String.fromCharCode(__[$]^['
         + key.toString()
         + '][$%'
-        + key.length
+        + (obscene ? '(' + fubar(key.length) +')' : key.length)
         + ']);';
 
-    JS = '(function() {' + JS + 'return _;})()'
+    JS = '(function(){' + JS + 'return _;})()'
 
     return JS;
 }
