@@ -3,7 +3,7 @@ Ever sit at a coffee shop, working on your app, and feeling the need to look
 over your shoulder every time you edit the settings/configuration file because
 the [database] passwords are just stting there in cleartext asking to be stolen?
 If you are a software developer with a modicum of security consciousness, you
-have.  MildCrypt solves that problem by providing a mild layer of encryption and
+have.  MildCrypt offers a mild layer of encryption and
 obfuscation to any string of text in a variety of programming languages 
 (JavaScript for now, more to come later).  Even if someone takes a picture of
 your screen, (s)he will not be able to steal the access codes (a.k.a passwords).
