@@ -1,0 +1,64 @@
+body {
+    font:16pt helvetica;
+    color:#333;
+    margin:0;
+}
+
+#band {
+    background:#f00;
+    padding:4em;
+    color:white;
+}
+
+#header {
+    font-family:Garamond;
+    font-variant:small-caps;
+    font-weight:bold;
+    text-align:center;
+    font-size:400%;
+}
+
+#sub_header {
+    text-align:center;
+}
+
+#input div, #output div {
+    font:10pt courier;
+    word-wrap:break-word;
+    max-height:10em;
+    overflow-y:scroll;
+}
+
+#input {
+    margin:2em 4em 0 4em;
+}
+
+#output {
+    margin:2em 4em;
+}
+
+.wrapper {
+    background:#ddd;
+    border-radius:2em;
+    padding:1em;
+    margin-bottom:3em;
+}
+
+textarea {
+    font:inherit;
+    border:0;
+    width:100%;
+    background:transparent;
+    outline:none;
+    overflow-y:scroll;
+}
+
+#input > span, #output > span {
+    font:bold 16pt Garamond;
+}
+
+#arrow {
+    font:bold 100pt arial;
+    text-align:center;
+    color:#aaa;
+}
