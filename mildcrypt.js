@@ -72,7 +72,7 @@ function JavaScript(text, obscene) {
     // construct the self-decrypting pseudo string of text
     JS  = 'var _=""; var __=['
         + cipher.toString()
-        + '];for(var $ in __)_+=String.fromCharCode(__[$]^['
+        + '];for(var $=0;$<__.length;$++)_+=String.fromCharCode(__[$]^['
         + key.toString()
         + '][$%'
         + (obscene ? '(' + fubar(key.length) +')' : key.length)
