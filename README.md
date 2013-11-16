@@ -20,7 +20,7 @@ var password = (function(){var _=""; var __=[202,187,113,208,61,188,145,145,137,
 Good luck gleaning the password from that mess.  To protect against Google Glass
 wearers, let the string run off the screen, *i.e.* do not add newlines.
 ## Use
-Go to the [MildCrypt website](http://2deviant.github.io/mildcrypt).
+Go to the [MildCrypt website](http://2deviant.github.io/mildcrypt/index.html).
 
 ## Use Cases
 
