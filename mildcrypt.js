@@ -61,7 +61,7 @@ function JavaScript(text, obscene) {
     var JS          = '';
 
     // obscene obfuscation flag
-    obscene = typeof obscene !== 'undefined' || obscene != null ? true : false;
+    obscene = typeof obscene === 'undefined' || obscene == null ? false : obscene;
 
     // obfuscate the cipher and the key, if necessary
     if(obscene) {
