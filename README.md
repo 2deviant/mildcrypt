@@ -15,7 +15,7 @@ var password = 'monkey2space';
 ```
 into this:
 ```javascript
-var password = (function(){var _=""; var __=[202,187,113,208,61,188,145,145,137,49,39,120];for(var $ in __)_+=String.fromCharCode(__[$]^[167,212,31,187,88,197,163,226,249,80,68,29,71,129,188,70][$%16]);return _;})();
+var password = (function(){var _='';for(var $=0;$<12;$++)_+=String.fromCharCode([49,121,254,215,137,29,126,102,205,195,47,90][$]^[92,22,144,188,236,100,76,21,189,162,76,63,185,247,244,222][$%16]);return _;})();
 ```
 Good luck gleaning the password from that mess.  To protect against Google Glass
 wearers, let the string run off the screen, *i.e.* do not add newlines.
