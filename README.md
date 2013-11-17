@@ -20,7 +20,7 @@ var password = (function(){var _='';for(var $=0;$<12;$++)_+=String.fromCharCode(
 Good luck gleaning the password from that mess.  To protect against Google Glass
 wearers, let the string run off the screen, *i.e.* do not add newlines.
 ## Use
-Go to the [MildCrypt website](http://2deviant.github.io/mildcrypt/index.html).
+Go to the [MildCrypt website](http://2deviant.github.io/mildcrypt).
 
 ## Use Cases
 
