@@ -3,9 +3,10 @@ Ever sit at a coffee shop, working on your app, and feeling the need to look
 over your shoulder every time you edit the settings/configuration file because
 the [database] passwords are just stting there in cleartext asking to be stolen?
 If you are a software developer with a modicum of security consciousness, you
-have.  MildCrypt offers a mild layer of encryption and
-obfuscation to any string of text in a variety of programming languages 
-(JavaScript for now, more to come later).  Even if someone takes a picture of
+have.  MildCrypt converts your precious strings into identially-looking Unicode
+characters, indistinguishable enough to the eye but, discernible by the computer.
+Spammers and phishers have been using this trick for a while, it is
+time to put it to good use.  Even if someone takes a picture of
 your screen, (s)he will not be able to steal the access codes (a.k.a passwords).
 
 ## Example
@@ -15,12 +16,13 @@ var password = 'monkey2space';
 ```
 into this:
 ```javascript
-var password = (function(){var _='';for(var $=0;$<12;$++)_+=String.fromCharCode([49,121,254,215,137,29,126,102,205,195,47,90][$]^[92,22,144,188,236,100,76,21,189,162,76,63,185,247,244,222][$%16]);return _;})();
+var password = (function(){var _="",i=0,f="ꞠꞡꞢꞣꞤꞥꞦꞧꞨꞩꞪꜢꜣꜤꜥꜨꝐꝑꝒꝓꝔꝕꝖꝗꝘꝙꝜꝝꝞꝟꜩꜪꜫꝠꝡꝢꝣꝤꝥꝦꝧꝨꝩꝪꝫꝬꝭꝮꝯꝰꝱꝲꝳꝴꝵꝶꝷꝸꝹꝺꝻꝼꝽꝾꝿ",r="ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/=",$="ꝝꝖꝼꝭꝜꝵꝕꝸꜣꝦꜤꝯꝘꝖꜤꝤ";while(i<16)_+=r[f.indexOf($[i++])];return atob(_);})()
 ```
-Good luck gleaning the password from that mess.  To protect against Google Glass
-wearers, let the string run off the screen, *i.e.* do not add newlines.
+Good luck gleaning the password from that!
 ## Use
-Go to the [MildCrypt website](http://2deviant.github.io/mildcrypt).
+Go to the [MildCrypt website](http://2deviant.github.io/mildcrypt) if
+you just want to obfuscate a string or two.  If you want to use this code, read
+on.
 
 ## Use Cases
 
