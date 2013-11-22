@@ -1,9 +1,9 @@
 # MildCrypt
 Ever sit at a coffee shop, working on your app, and feeling the need to look
 over your shoulder every time you edit the settings/configuration file because
-the [database] passwords are just stting there in cleartext asking to be stolen?
+the [database] passwords are just sitting there in cleartext asking to be stolen?
 If you are a software developer with a modicum of security consciousness, you
-have.  MildCrypt converts your precious strings into identially-looking Unicode
+have.  MildCrypt converts your precious strings into identcially-looking Unicode
 characters, indistinguishable enough to the eye but, discernible by the computer.
 Spammers and phishers have been using this trick for a while, it is
 time to put it to good use.  Even if someone takes a picture of
