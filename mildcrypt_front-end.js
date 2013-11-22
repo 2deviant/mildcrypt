@@ -1,15 +1,5 @@
 var previous_cleartext = '';
 
-// super-obfuscaed version
-function JavaScriptObscure(text) {
-    return JavaScript(text, true);
-}
-
-// super-obfuscaed, wrapped version
-function JavaScriptObscureWrap(text) {
-    return '&lt;script type="text/javascript"&gt;document.writeln(' + JavaScript(text, true) + ')&lt;/script&gt';
-}
-
 // wrapped for HTML inlining
 function JavaScriptWrap(text) {
     return '&lt;script type="text/javascript"&gt;document.writeln(' + JavaScript(text) + ')&lt;/script&gt';
@@ -62,10 +52,8 @@ function encrypt() {
         previous_cleartext = cleartext;
 
     var functions = [
-        ['JavaScriptObscureWrap',   'JavaScript: Obscene Obscuration HTML Inline'],
-        ['JavaScriptObscure',       'JavaScript: Obscene Obscuration'],
-        ['JavaScriptWrap',          'JavaScript: HTML Inline'],
-        ['JavaScript',              'JavaScript'],
+        ['JavaScriptWrap',  'JavaScript: HTML inline'],
+        ['JavaScript',      'JavaScript']
     ];
 
     // loop through the obfuscations
