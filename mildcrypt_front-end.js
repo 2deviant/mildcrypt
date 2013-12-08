@@ -53,7 +53,8 @@ function encrypt() {
 
     var functions = [
         ['JavaScriptWrap',  'JavaScript: HTML inline'],
-        ['JavaScript',      'JavaScript']
+        ['JavaScript',      'JavaScript'],
+        ['PHP',             'PHP']
     ];
 
     // loop through the obfuscations

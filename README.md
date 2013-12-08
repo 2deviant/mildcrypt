@@ -9,6 +9,9 @@ Spammers and phishers have been using this trick for a while, it is
 time to put it to good use.  Even if someone takes a picture of
 your screen, (s)he will not be able to steal the access codes (a.k.a passwords).
 
+## Compatibility
+MildCrypt supports *JavaScript* and *PHP*, with more languages on the way.
+
 ## Example
 MildCrypt turns this:
 ```javascript
@@ -20,9 +23,7 @@ var password = (function(){var _="",i=0,f="ꞠꞡꞢꞣꞤꞥꞦꞧꞨꞩꞪꜢ�
 ```
 Good luck gleaning the password from that!
 ## Use
-Go to the [MildCrypt website](http://2deviant.github.io/mildcrypt) if
-you just want to obfuscate a string or two.  If you want to use this code, read
-on.
+Go to the [MildCrypt website](http://2deviant.github.io/mildcrypt) to obfuscate a string or two.
 
 ## Use Cases
 

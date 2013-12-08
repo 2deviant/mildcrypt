@@ -75,5 +75,16 @@ function obfuscate(input, forward, reverse) {
 
 function PHP(text) {
 
+    // encode with base64 then obfuscate
+    var encoded = obfuscate(btoa(text), b64dictionary, obfuscationary);
+
+    // construct the self-decrypting PHP code
+    var PHP = "base64_decode(str_replace(preg_split('//u','"
+            + obfuscationary
+            + "'), preg_split('//',join(range(A,Z)).join(range(a,z)).'0123456789+/='),'"
+            + encoded
+            + "'));";
+
+    return PHP;
 }
 
