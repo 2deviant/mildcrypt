@@ -11,15 +11,13 @@ body {
 }
 
 #header {
-    font-family:Garamond;
-    font-variant:small-caps;
-    font-weight:bold;
     text-align:center;
-    font-size:400%;
+    font:small-caps bold 400% Garamond;
 }
 
 #sub_header {
     text-align:center;
+    letter-spacing:.25em;
 }
 
 #input div, #output div {
@@ -40,6 +38,8 @@ body {
     border-radius:2em;
     padding:1em;
     margin-bottom:3em;
+    border-top-left-radius:0;
+    box-shadow:5px 5px 10px #888;
 }
 
 textarea {
@@ -52,7 +52,10 @@ textarea {
 
 #input > span, #output > span {
     font:bold 16pt Garamond;
-    margin-left:1em;
+    background:#ddd;
+    padding:.25em 1em 0 1em;
+    border-top-left-radius:1em;
+    border-top-right-radius:1em;
 }
 
 #arrow {
