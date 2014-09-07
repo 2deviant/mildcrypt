@@ -1,66 +1,79 @@
 body {
-    font:16pt helvetica;
-    color:#333;
-    margin:0;
-}
-
-#band {
-    background:#f00;
-    padding:2em;
-    color:white;
+    background:#000 url(bg.png);
+    color:#fff;
+    font-family:helvetica;
+    margin:100px 75px;
 }
 
 #header {
-    text-align:center;
-    font:small-caps bold 400% Garamond;
+    border-bottom:1px solid #fff;
+    font-size:18pt;
+    margin:0 15px;
 }
 
-#sub_header {
-    text-align:center;
-    letter-spacing:.25em;
+#title {
+    font-size:26pt;
+    font-weight:bold;
+    margin:10px 15px;
+    text-align:right;
 }
 
-#input div, #output div {
-    font:10pt courier;
+#title span {
+    color:#aaa;
+    font-weight:normal;
+}
+
+#input div, #input textarea {
+    background:rgba(50, 150, 50, .25);
+    border:1px solid #444;
+    display:inline-block;
+    color:#aaa;
+    font:10pt verdana;
+    height:100px;
+    margin:15px;
+    padding:1em;
+    width:calc(50% - 60px - 1px);
+}
+
+#input div {
+    opacity:0;
+    -webkit-transition: -webkit-opacity .5s, background .5s;
+       -moz-transition:    -moz-opacity .5s, background .5s;
+        -ms-transition:     -ms-opacity .5s, background .5s;
+         -o-transition:      -o-opacity .5s, background .5s;
+            transition:         opacity .5s, background .5s;
+}
+
+#input div.show {
+    opacity:1;
+    background-position:center center;
+}
+
+#input textarea {
+    outline:0;
+    resize:none;
+}
+
+#input div {
+    background:rgba(50, 50, 150, .25);
+    overflow:scroll;
+    position:relative;
     word-wrap:break-word;
 }
 
-#input {
-    margin:2em 4em 0 4em;
+#input div {
+    background-position:center 300px;
+    background-repeat:no-repeat;
 }
 
-#output {
-    margin:2em 4em;
+#input #JavaScriptWrap {
+    background-image:url(JavaScript.png)
 }
 
-.wrapper {
-    background:#ddd;
-    border-radius:2em;
-    padding:1em;
-    margin-bottom:3em;
-    border-top-left-radius:0;
-    box-shadow:5px 5px 10px #888;
+#input #JavaScript {
+    background-image:url(JavaScript.png)
 }
 
-textarea {
-    font:inherit;
-    border:0;
-    width:100%;
-    background:transparent;
-    outline:none;
-}
-
-#input > span, #output > span {
-    font:bold 16pt Garamond;
-    background:#ddd;
-    padding:.25em 1em 0 1em;
-    border-top-left-radius:1em;
-    border-top-right-radius:1em;
-}
-
-#arrow {
-    font:bold 75pt verdana;
-    text-align:center;
-    color:#aaa;
-    line-height:.5em;
+#input #PHP {
+    background-image:url(PHP.png)
 }
