@@ -10,7 +10,7 @@ time to put it to good use.  Even if someone takes a picture of
 your screen, (s)he will not be able to steal the access codes (a.k.a passwords).
 
 ## Compatibility
-MildCrypt supports *JavaScript* and *PHP*, with more languages on the way.
+MildCrypt supports *JavaScript*, *PHP*, and *Python*.
 
 ## Example
 MildCrypt turns this:
