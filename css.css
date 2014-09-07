@@ -46,7 +46,7 @@ body {
 
 #input div.show {
     opacity:1;
-    background-position:center center;
+    background-position:bottom right;
 }
 
 #input textarea {
@@ -62,7 +62,7 @@ body {
 }
 
 #input div {
-    background-position:center 300px;
+    background-position:right 300px;
     background-repeat:no-repeat;
 }
 
