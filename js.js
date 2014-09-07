@@ -55,7 +55,8 @@ function encrypt() {
     var functions = [
         JavaScriptWrap,
         JavaScript,
-        PHP
+        PHP,
+        Python
     ];
 
     // loop through the obfuscations
