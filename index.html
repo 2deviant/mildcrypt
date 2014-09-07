@@ -2,32 +2,22 @@
 <html xmlns='http://www.w3.org/1999/xhtml' xml:lang='en' lang='en'>
     <head>
         <meta http-equiv='Content-Type' content='text/html;charset=utf-8'/>
-        <title>MildCrypt :: Security Through Obscurity</title>
+        <title>MildCrypt :: Security Through Extreme Obscurity</title>
         <link href='css.css' rel='stylesheet'/>
-        <script type='text/javascript' src='http://2deviant.github.io/js/utilities.js'></script>
         <script type='text/javascript' src='mildcrypt.js'></script>
-        <script type='text/javascript' src='mildcrypt_front-end.js'></script>
+        <script type='text/javascript' src='js.js'></script>
     </head>
     <body>
-        <div id='band'>
-            <div id='header'>
-                MildCrypt
-            </div>
-            <div id='sub_header'>
-                Security Through Obscurity
-            </div>
+        <div id='header'>
+            MildCrypt
+        </div>
+        <div id='title'>
+            Security <span>Through<br/>[eXtreme]</span> Obscurity
         </div>
         <div id='input'>
-            <span>
-                Cleartext
-            </span>
-            <div class='wrapper'>
-                <textarea id='text' onkeyup='encrypt()'></textarea>
-            </div>
+            <textarea id='text' placeholder='Enter your secrets...' onkeyup='encrypt()'></textarea>
         </div>
-        <div id='arrow'>&darr; &darr; &darr;</div>
-        <div id='output'>
-        </div>
+        <!--
         <script>
             (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
             (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
@@ -36,5 +26,6 @@
             ga('create', 'UA-16398769-3', '2deviant.github.io');
             ga('send', 'pageview');
         </script>
+        -->
     </body>
 </html>
