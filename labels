@@ -1,0 +1,8 @@
+#!/bin/bash
+
+command="-background transparent -font Arial-Black -pointsize 60"
+
+for i in PHP JavaScript Python; do
+    convert $command -fill "rgba(100,200,100,.5)" label:$i $i.png;
+done
+
